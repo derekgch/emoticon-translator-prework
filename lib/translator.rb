@@ -8,6 +8,8 @@ def load_library (path = 'lib/emoticons.yml')
   new_emo = {}
   emo = YAML.load_file(path)
   emo.each do |key, data|
+    e_emo = data[0]
+    j_emo = data[1]
     puts key,data[1]
 
   end
