@@ -34,9 +34,14 @@ def get_japanese_emoticon(path, emo)
   end
 end
 
+# accepts two arguments, the YAML file path and the emoticon (FAILED - 1)
+# calls on #load_library and gives it the argument of the file path (FAILED - 2)
+# returns the English meaning of the Japanese emoticon (＾ｖ＾) (FAILED - 3)
+# returns the English meaning of the Japanese emoticon (￣ー￣) (FAILED - 4)
+# returns the English meaning of the Japanese emoticon (Ｔ▽Ｔ) (FAILED - 5)
+# returns an apology message if the argument is not a known emoticon (FAILED - 6)
+
 def get_english_meaning
   # code goes here
-  
+
 end
-
-
