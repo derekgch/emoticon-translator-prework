@@ -1,7 +1,7 @@
 require "yaml"
 
 # require modules here
-
+#{"angel"=>["O:)", "☜(⌒▽⌒)☞"], "angry"=>[">:(", "ヽ(ｏ`皿′ｏ)ﾉ"],...}
 def load_library (path = 'lib/emoticons.yml')
   # code goes here
   emo = YAML.load_file(path)
