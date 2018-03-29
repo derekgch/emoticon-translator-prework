@@ -27,6 +27,12 @@ end
 def get_japanese_emoticon(path, emo)
   # code goes here
   emo_lib = load_library(path)
+  if(emo_lib["get_emoticon"].has_key?(emo) )
+
+  else
+    puts "Not known emoticon"
+  end
+
 end
 
 def get_english_meaning
