@@ -24,7 +24,7 @@ end
 # returns the Japanese equivalent of an English sad (FAILED - 5)
 # returns an apology message if the argument is not a known emoticon (FAILED - 6)
 #{get_emoticon => {O:) =>"☜(⌒▽⌒)☞" , ....}, get_meaning => {"☜(⌒▽⌒)☞" => "angel",....}}
-def get_japanese_emoticon
+def get_japanese_emoticon(path, emo)
   # code goes here
 end
 
