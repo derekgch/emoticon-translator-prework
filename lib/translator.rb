@@ -11,6 +11,7 @@ def load_library (path = 'lib/emoticons.yml')
     e_emo = data[0]
     j_emo = data[1]
     new_emo["get_emoticon"][e_emo] = j_emo
+    new_emo["get_meaning"][j_emo] = key
     puts key,e_emo,j_emo
 
   end
