@@ -26,6 +26,7 @@ end
 #{get_emoticon => {O:) =>"☜(⌒▽⌒)☞" , ....}, get_meaning => {"☜(⌒▽⌒)☞" => "angel",....}}
 def get_japanese_emoticon(path, emo)
   # code goes here
+  emo_lib = load_library(path)
 end
 
 def get_english_meaning
