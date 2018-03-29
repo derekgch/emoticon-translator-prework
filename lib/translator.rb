@@ -41,7 +41,13 @@ end
 # returns the English meaning of the Japanese emoticon (Ｔ▽Ｔ) (FAILED - 5)
 # returns an apology message if the argument is not a known emoticon (FAILED - 6)
 
-def get_english_meaning
+def get_english_meaning(path, emo)
   # code goes here
+  emo_lib = load_library(path)
+  if(emo_lib["get_emoticon"].has_key?(emo) )
+    return emo_lib["get_emoticon"][emo]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 
 end
