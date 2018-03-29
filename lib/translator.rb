@@ -10,6 +10,7 @@ def load_library (path = 'lib/emoticons.yml')
   emo.each do |key, data|
     e_emo = data[0]
     j_emo = data[1]
+    new_emo["get_emoticon"][e_emo] = j_emo
     puts key,e_emo,j_emo
 
   end
