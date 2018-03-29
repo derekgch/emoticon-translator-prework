@@ -31,6 +31,7 @@ def get_japanese_emoticon(path, emo)
     return emo_lib["get_emoticon"][emo]
   else
     puts "Not known emoticon"
+    return
   end
 
 end
