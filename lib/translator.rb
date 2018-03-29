@@ -4,7 +4,7 @@ require "yaml"
 
 def load_library (path = 'lib/emoticons.yml')
   # code goes here
-  emo = YAML.load_file('lib/emoticons.yml')
+  emo = YAML.load_file(path)
   emo.inspect
 end
 
