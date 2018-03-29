@@ -6,7 +6,9 @@ require "yaml"
 def load_library (path = 'lib/emoticons.yml')
   # code goes here
   emo = YAML.load_file(path)
-  emo
+  emo.each do |key, data|
+    puts key,data
+  end
 end
 
 def get_japanese_emoticon
