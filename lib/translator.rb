@@ -28,7 +28,7 @@ def get_japanese_emoticon(path, emo)
   # code goes here
   emo_lib = load_library(path)
   if(emo_lib["get_emoticon"].has_key?(emo) )
-
+    return emo_lib["get_emoticon"][emo]
   else
     puts "Not known emoticon"
   end
