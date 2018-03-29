@@ -7,7 +7,8 @@ def load_library (path = 'lib/emoticons.yml')
   # code goes here
   emo = YAML.load_file(path)
   emo.each do |key, data|
-    puts key,data
+    puts key,data[0]
+
   end
 end
 
