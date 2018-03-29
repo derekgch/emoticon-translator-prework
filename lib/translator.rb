@@ -30,7 +30,7 @@ def get_japanese_emoticon(path, emo)
   if(emo_lib["get_emoticon"].has_key?(emo) )
     return emo_lib["get_emoticon"][emo]
   else
-    puts "Not known emoticon"
+    return "Sorry, that emoticon was not found"
 
   end
 
