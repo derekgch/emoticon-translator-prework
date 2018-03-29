@@ -5,7 +5,7 @@ require "yaml"
 #{get_emoticon => {O:) =>"☜(⌒▽⌒)☞" , ....}, get_meaning => {"☜(⌒▽⌒)☞" => "angel",....}}
 def load_library (path = 'lib/emoticons.yml')
   # code goes here
-  new_emo = {}
+  new_emo = {"get_emoticon" => {}, "get_meaning" => {}}
   emo = YAML.load_file(path)
   emo.each do |key, data|
     e_emo = data[0]
